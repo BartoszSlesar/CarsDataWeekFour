@@ -1,9 +1,10 @@
 import "../css/style.css"
+import { Link } from 'react-router-dom'
 
-export default function CardFooter() {
+export default function CardFooter({id}) {
     return (
-        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">DETAILS</a></div>
+        <div className="card-footer p-4 pt-0 border-top-0 bg-transparent">
+            <div className="text-center"><Link className="btn btn-outline-dark mt-auto" to={"/" + id}>DETAILS</Link></div>
         </div>
     );
 }

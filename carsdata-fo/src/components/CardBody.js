@@ -1,11 +1,11 @@
 import "../css/style.css"
 
-export default function CardBody(){
+export default function CardBody({mark, model, color}) {
     return (
-        <div class="card-body p-4">
-            <div class="text-center">
-                <h5 class="fw-bolder">CAR NAME</h5>
-                PRICE
+        <div className="card-body p-4">
+            <div className="text-center">
+                <h5 className="fw-bolder">{mark} {model}</h5>
+                <h5 className="fw-bolder">{color}</h5>
             </div>
         </div>
     );

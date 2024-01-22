@@ -16,6 +16,7 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/v1/cars")
 @AllArgsConstructor
+@CrossOrigin("*")
 public class CarsApi {
 
     private CarService carService;

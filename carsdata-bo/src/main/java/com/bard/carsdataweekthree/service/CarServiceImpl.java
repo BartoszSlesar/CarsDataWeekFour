@@ -1,8 +1,11 @@
 package com.bard.carsdataweekthree.service;
 
 import com.bard.carsdataweekthree.model.Car;
+import com.bard.carsdataweekthree.utils.ImageUtils;
 import org.springframework.stereotype.Service;
 
+import java.awt.*;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -15,13 +18,14 @@ public class CarServiceImpl implements CarService {
     private static long currentId = 0;
     private List<Car> carList;
 
-    public CarServiceImpl() {
+    public CarServiceImpl() throws IOException {
+        ImageUtils imageUtils = new ImageUtils();
         this.carList = new ArrayList<>();
-        Car car1 = new Car(1,"Skoda","Octavia","Black");
+        Car car1 = new Car(1,"Skoda","Octavia","Black",imageUtils.ImageConverter("Octavia.jpg"));
         this.addNewCar(car1);
-        Car car2 = new Car(2,"Toyota","Corolla","Silver");
+        Car car2 = new Car(2,"Toyota","Corolla","Silver",imageUtils.ImageConverter("toyota.jpg"));
         this.addNewCar(car2);
-        Car car3 = new Car(3,"Honda","Civic","Blue");
+        Car car3 = new Car(3,"Honda","Civic","Blue",imageUtils.ImageConverter("civic.jpg"));
         this.addNewCar(car3);
     }
 

@@ -2,14 +2,16 @@ import CardBody from "./CardBody";
 import CardFooter    from "./CardFooter";
 import "../css/style.css"
 
-export default function CarData() {
+export default function CarData({carData}) {
     return (
-        <div class="col mb-5">
-            <div class="card h-100">
+        <div className="col mb-5">
+            <div className="card h-100">
 
-                <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                <CardBody/>
-                <CardFooter/>
+                <img className="card-img-top" src={`data:image/jpeg;base64,${carData.image}`} alt="..." />
+                <CardBody mark={carData.mark}
+                          model={carData.model}
+                          color={carData.color}/>
+                <CardFooter id={carData.id}/>
             </div>
         </div>
     );

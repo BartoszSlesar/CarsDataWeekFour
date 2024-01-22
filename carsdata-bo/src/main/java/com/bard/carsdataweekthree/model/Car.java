@@ -2,6 +2,7 @@ package com.bard.carsdataweekthree.model;
 
 
 import lombok.*;
+import org.springframework.lang.Nullable;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
@@ -24,4 +25,7 @@ public class Car {
     @NotBlank
     @Size(min = 2, max = 27)
     private String color;
+
+    @Nullable
+    private String image;
 }
