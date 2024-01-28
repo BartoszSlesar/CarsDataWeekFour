@@ -45,7 +45,9 @@ export default function CarMainView({reducerValue, forceUpdate}) {
                                                            carData={carData}
                                                            forceUpdate={forceUpdate}/>)}
                     </div>
+
                 </div>
+
             </section>
         </>
     );

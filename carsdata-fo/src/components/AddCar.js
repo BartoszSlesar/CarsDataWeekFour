@@ -63,7 +63,8 @@ export default function AddCar({forceUpdate}) {
                 <label htmlFor="stacked-img">Upload Image</label>
                 <input accept="image/jpeg" type="file" onChange={changeImage} id="stacked-img" className="btn btn-outline-secondary"/>
                 <label/>
-                <button type="submit" className="btn btn-lg btn-secondary ">Create</button>
+                <button type="submit" className="btn btn-lg btn-secondary">Create</button>
+                <label/>
             </fieldset>
 
         </form>
