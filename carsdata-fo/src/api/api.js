@@ -12,7 +12,7 @@ function api(axios) {
         post: (url, body, config = {}) => axios.post(url, body, config),
         put: (url, body, config = {}) => axios.put(url, body, config),
         patch: (url, body, config = {}) => axios.patch(url, body, config),
-        delete: (url, config = {}) => axios.delete(url, config),
+        delete: (url, config = {}) => axios.delete(url,config),
     };
 };
 

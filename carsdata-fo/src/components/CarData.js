@@ -2,7 +2,7 @@ import CardBody from "./CardBody";
 import CardFooter    from "./CardFooter";
 import "../css/style.css"
 
-export default function CarData({carData}) {
+export default function CarData({carData, forceUpdate}) {
     return (
         <div className="col mb-5">
             <div className="card h-100">
@@ -11,7 +11,7 @@ export default function CarData({carData}) {
                 <CardBody mark={carData.mark}
                           model={carData.model}
                           color={carData.color}/>
-                <CardFooter id={carData.id}/>
+                <CardFooter id={carData.id} forceUpdate={forceUpdate} />
             </div>
         </div>
     );

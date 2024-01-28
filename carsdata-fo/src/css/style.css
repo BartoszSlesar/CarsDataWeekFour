@@ -2799,6 +2799,7 @@ textarea.form-control-lg {
     border-radius: var(--bs-btn-border-radius);
     background-color: var(--bs-btn-bg);
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    margin-right: 5px;
 }
 @media (prefers-reduced-motion: reduce) {
     .btn {
@@ -10823,4 +10824,19 @@ textarea.form-control-lg {
     .d-print-none {
         display: none !important;
     }
+}
+
+
+.carDetails {
+
+}
+
+.carDetails img {
+    width: 650px;
+    height: 450px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
